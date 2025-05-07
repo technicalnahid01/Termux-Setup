@@ -2,7 +2,6 @@
 
 ![Termux Logo](https://img.shields.io/badge/Termux-000000?style=for-the-badge&logo=termux&logoColor=white)
 ![Shell Script](https://img.shields.io/badge/Shell_Script-121011?style=for-the-badge&logo=gnu-bash&logoColor=white)
-![License](https://img.shields.io/badge/License-MIT-green.svg)
 
 A one-click setup script to supercharge your Termux environment with essential tools, development kits, and utilities!
 
@@ -15,12 +14,18 @@ A one-click setup script to supercharge your Termux environment with essential t
 - **Extras:** Nmap, FFmpeg, Figlet, Neofetch
 - **Storage Setup:** Prepares Termux storage access
 
-## 🛠️ Installation
+## 🛠️ Installation Methods
 
-Run this single command in Termux:
-
+### Method 1: Direct Install (One Command)
 ```bash
-bash -c "$(curl -fsSL https://raw.githubusercontent.com/yourusername/Termux-Setup/main/setup.sh)"
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/technicalnahid01/Termux-Setup/main/setup.sh)"
+```
+
+### Method 2: Manual Installation (Recommended for Developers)
+```bash
+git clone https://github.com/technicalnahid01/Termux-Setup
+cd Termux-Setup
+bash setup.sh
 ```
 
 ## 📦 Package List
@@ -34,40 +39,26 @@ bash -c "$(curl -fsSL https://raw.githubusercontent.com/yourusername/Termux-Setu
 
 ## 🔧 Customization
 
-Edit the script before running to:
+Edit `setup.sh` before running to:
 - Remove unwanted packages
 - Add your own tools
 - Change SSH key type (Ed25519 by default)
 
+## 🚨 Troubleshooting
+
+If you encounter issues:
+1. Ensure you have stable internet
+2. Run `termux-change-repo` if package installs fail
+3. Check storage permissions
+
 ## 🤝 Contributing
 
-Pull requests welcome! For major changes, please open an issue first.
-
-## 📜 License
-
-[MIT](LICENSE)
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
 ---
 
-Made with ❤️ for Termux users! [Star ⭐ this repo](https://github.com/yourusername/Termux-Setup) if you found it useful.
-```
-
-### Key Elements Included:
-1. **Shields.io Badges** - For visual appeal
-2. **Features Section** - Highlights key capabilities
-3. **One-Line Install** - Easy copy-paste command
-4. **Package Table** - Organized overview
-5. **Customization Notes** - For advanced users
-6. **Contribution Guidelines** - Encourages collaboration
-7. **License Info** - Important for open-source projects
-
-### Recommended Extras:
-1. Add **screenshots** of the script in action
-2. Include **troubleshooting** section
-3. Add **version history/changelog**
-4. Create a **wiki** for advanced usage
-
-Would you like me to add any specific sections like:
-- Detailed usage instructions?
-- FAQ section?
-- Video demo link template?
+Made with ❤️ for Termux users! [Star ⭐ this repo](https://github.com/technicalnahid01/Termux-Setup) if you found it useful.
